@@ -1,22 +1,18 @@
 <?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package ostrander
- */
+$themeurl = get_bloginfo('template_url');
 
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	<!--Fonts -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<?php wp_head(); ?>
 </head>
 
@@ -25,35 +21,31 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'ostrander' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$ostrander_description = get_bloginfo( 'description', 'display' );
-			if ( $ostrander_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $ostrander_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-end">
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ostrander' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
+      <h1 class="logo me-auto"><a href="/staging/"><img src="<?php echo $themeurl ?>/assets/img/home/oc-logo-rgb.png" alt="logo"></a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+		<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'container' => false,
+					)
+				);
 			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+			<ul>
+			<li class="d-flex">
+				<a href="tel:6309712211" class="me-2 pt-0"><img src="<?php echo $themeurl ?>/assets/img/phone-round-34px.png" alt="phone" height="30" width="30"></a>
+				<a href="mailto:info@ostrander.biz" class="me-2 pt-0 ps-0"><img src="<?php echo $themeurl ?>/assets/img/email-round-34px.png" alt="email" height="30" width="30"></a>
+				<a href="https://www.linkedin.com/company/ostrander-construction-inc./" target="_blank"  class="pt-0 ps-0"><img src="<?php echo $themeurl ?>/assets/img/linkedin-round-34px.png" alt="linkedin" height="30" width="30"></a>
+			</li>
+			</ul>
+			<i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">

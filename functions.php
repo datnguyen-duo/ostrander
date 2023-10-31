@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '1.0.1' );
 }
 
 /**
@@ -138,14 +138,21 @@ add_action( 'widgets_init', 'ostrander_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ostrander_scripts() {
+	wp_enqueue_style( 'fonts', "https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&family=Oxygen:wght@300;400;700&display=swap", array(), null);
+	wp_enqueue_style( 'owl', get_stylesheet_directory_uri() . "/owlcarousel/owl.carousel.min.css", array(), _S_VERSION );
+	wp_enqueue_style( 'owl-theme', get_stylesheet_directory_uri() . "/owlcarousel/owl.theme.default.min.css", array(), _S_VERSION );
+	wp_enqueue_style( 'animate', get_stylesheet_directory_uri() . "/assets/vendor/animate.css/animate.min.css", array(), _S_VERSION );
+	wp_enqueue_style( 'aos', get_stylesheet_directory_uri() . "/assets/vendor/aos/aos.css", array(), _S_VERSION );
+	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . "/assets/vendor/bootstrap/css/bootstrap.min.css", array(), _S_VERSION );
+	wp_enqueue_style( 'bootstrap-icons', get_stylesheet_directory_uri() . "/assets/vendor/bootstrap-icons/bootstrap-icons.css", array(), _S_VERSION );
+	wp_enqueue_style( 'lightbox', get_stylesheet_directory_uri() . "/assets/lightbox/css/lightbox.css", array(), _S_VERSION );
 	wp_enqueue_style( 'ostrander-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'ostrander-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'ostrander-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js', array('jquery'), null, true);
+	wp_enqueue_script('aos', get_template_directory_uri() . '/assets/vendor/aos/aos.js', true);
+	wp_enqueue_script('owl', get_template_directory_uri() . '/owlcarousel/owl.carousel.min.js', true);
+	wp_enqueue_script('lightbox', get_template_directory_uri() . '/assets/lightbox/js/lightbox.js', true);
+	wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/main.js', true);
 }
 add_action( 'wp_enqueue_scripts', 'ostrander_scripts' );
 
