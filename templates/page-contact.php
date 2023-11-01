@@ -77,8 +77,7 @@ $themeurl = get_bloginfo('template_url');
   <img
     class="w-100"
     src="<?php echo $themeurl; ?>/assets/img/projects/hero-kitchen-1800.jpg"
-    alt="kitchen"
-  />
+    alt="where we work"  />
 </section>
 
 <?php get_footer(); ?>
