@@ -125,9 +125,7 @@ $themeurl = get_bloginfo('template_url');
         <h4 class="text-description mb-3">
           <ul>
             <li class="spaced">
-              <span class="strong">1 Job start up notice</span> <br />Email that
-              kicks off project include details on permit, schedule, list of
-              contractors/subs, start date and anticipated completion
+              <span class="strong">1 Job start up notice</span> <br />Email that kicks off project include details on permit, schedule, list of contractors/subs, start date, and anticipated completion
             </li>
             <li class="spaced">
               <span class="strong"
@@ -154,21 +152,12 @@ $themeurl = get_bloginfo('template_url');
               <br />Communicates space is occupancy ready to entire project team
             </li>
             <li class="spaced">
-              <span class="strong">6 Punchlist Completion Letter</span> <br />At
-              Significant Completion, space is walked with tenant, property
-              manager, architect to develop a final punch list which is managed
-              to completion.
+              <span class="strong">6 Punchlist Completion Letter</span> <br />At Significant Completion, space is walked with tenant, property manager, and architect to develop a final punch list which is managed to completion
             </li>
           </ul>
         </h4>
         <h4 class="text-description mb-3">
-          Our initial imperative to to understand your priorities. We believe
-          that listening first is fundamental to forming the foundation of open
-          communication and transparency, elements that define each of our
-          client relationships. Our highly-coordinated process targets
-          consistent reporting and is designed to proactively address potential
-          challenges, adapt to evolving project dynamics, ensure productivity
-          and, ultimately, deliver success.
+            
         </h4>
       </div>
     </div>
