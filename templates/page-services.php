@@ -26,14 +26,9 @@ $themeurl = get_bloginfo('template_url');
   <div class="container">
     <div class="row">
       <div class="col-lg-8 offset-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 content">
-        <h2 class="green-title">CONSTRUCTION DONE RIGHT</h2>
+        <h2 class="green-title">CONSISTENT MANAGEMENT APPROACH</h2>
         <h4 class="text-description mb-3">
-          From concept development through project completion, Ostrander
-          Construction is a transparent collaborator interested in fully
-          understanding your goals and, ultimately, delivering your vision. With
-          over 30 years of construction experience, we bring value to every
-          project, offering both our depth of expertise and our strong network
-          of partners.
+          From concept development through project completion, Ostrander Construction is a transparent collaborator interested in fully understanding your goals and, ultimately, delivering your vision. With over 30 years of construction experience, we bring value to every project team, offering both our depth of expertise and our strong network of partners.
         </h4>
       </div>
     </div>
