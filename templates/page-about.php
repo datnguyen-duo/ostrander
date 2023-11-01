@@ -23,32 +23,17 @@ $themeurl = get_bloginfo('template_url');
       <div class="col-lg-8 offset-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 content">
         <h2 class="green-title">OUR COMPANY</h2>
         <h4 class="text-description mb-3">
-          Our success is attributed to open communication, problem-solving
-          skills, dependability and project leadership. These qualities are
-          foundational to Ostrander Construction and the way we work and have
-          helped us build trust-based relationships with our clients as well as
-          our employees, subcontractors, architects/engineers and others
-          involved in the construction process.
+          Our success is attributed to open communication, problem-solving skills, dependability and project leadership. These qualities are foundational to Ostrander Construction and the way we work and have helped us build trust-based relationships with our clients as well as our employees, subcontractors, architects/engineers, and others involved in the construction process.
         </h4>
         <h2 class="green-title">&nbsp;</h2>
         <h2 class="green-title">HISTORY</h2>
         <h4 class="text-description mb-3">
-        In 1993, with an entrepreneurial spirit and deep knowledge of commercial
-        construction, Lee Ostrander founded Ostrander Construction. Beginning as a
-        “team of one,” Ostrander built a trust-based commercial construction firm that
-        now employs more than 25 people in the Chicagoland market.
+        In 1993, with an entrepreneurial spirit and deep knowledge of commercial construction, Lee Ostrander founded Ostrander Construction. Beginning as a “team of one,” Ostrander built a trust-based commercial construction firm that now employs more than 25 people in the Chicagoland market.
         </h4>
         <h4 class="text-description mb-3">
-        From its inception, Ostrander has focused on delivering high-quality corporate
-        commercial interiors projects and building long-term relationships with each
-        client. With steady growth came a diverse and experienced management team who
-        have allowed us to pursue other markets including medical office, retail,
-        industrial, libraries and schools.
+        From its inception, Ostrander has focused on delivering high-quality construction projects and building long-term relationships with each client. With steady growth came a diverse and experienced management team who have allowed us to pursue other markets including medical office, industrial, retail, education, wellness, and government facilities.
         </h4>
-        <h4 class="text-description mb-3">
-        We welcome the opportunity to learn about your upcoming project and to work
-        together to help you realize your vision.
-        </h4>
+        
       </div>
     </div>
   </div>
@@ -61,7 +46,7 @@ $themeurl = get_bloginfo('template_url');
     data-aos="fade-in"
     data-aos-delay="1"
   >
-    <h2>People</h2>
+    <h2> </h2>
   </div>
 </section>
 
@@ -71,9 +56,7 @@ $themeurl = get_bloginfo('template_url');
       <div class="col-lg-8 offset-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 content">
         <h2 class="green-title">OUR MANAGEMENT TEAM</h2>
         <h4 class="text-description mb-3">
-          Our years of amazing work would not have been possible without
-          committed and energetic people. We are fortunate to have many
-          long-term team members who have worked together for many years.
+          Our years of amazing work would not have been possible without committed and passionate people. We are fortunate to have many long-term employees on our team.
         </h4>
 
         <div class="row my-5 pt-3">
@@ -82,9 +65,7 @@ $themeurl = get_bloginfo('template_url');
               <ul>
                 <li class="name">Lee Ostrander</li>
                 <li>President and Founder</li>
-                <li>
-                  <a href="mailto:lee@ostrander.biz">lee@ostrander.biz</a>
-                </li>
+                 
               </ul>
             </h4>
 
@@ -92,36 +73,28 @@ $themeurl = get_bloginfo('template_url');
               <ul>
                 <li class="name">Bill Schmitz</li>
                 <li>Senior Project Manager</li>
-                <li>
-                  <a href="mailto:bill@ostrander.biz">bill@ostrander.biz</a>
-                </li>
+                
               </ul>
             </h4>
             <h4>
               <ul>
                 <li class="name">Steve Koss</li>
                 <li>Senior Project Manager</li>
-                <li>
-                  <a href="mailto:steve@ostrander.biz">steve@ostrander.biz</a>
-                </li>
+                
               </ul>
             </h4>
             <h4>
               <ul>
                 <li class="name">Jack Machalek</li>
                 <li>Project Manager</li>
-                <li>
-                  <a href="mailto:jack@ostrander.biz">jack@ostrander.biz</a>
-                </li>
+                
               </ul>
             </h4>
             <h4>
               <ul>
                 <li class="name">Dennis Tynan</li>
                 <li>Project Manager</li>
-                <li>
-                  <a href="mailto:dennis@ostrander.biz">dennis@ostrander.biz</a>
-                </li>
+                
               </ul>
             </h4>
           </div>
@@ -130,36 +103,28 @@ $themeurl = get_bloginfo('template_url');
               <ul>
                 <li class="name">Connor Ostrander</li>
                 <li>Project Manager</li>
-                <li>
-                  <a href="mailto:connor@ostrander.biz">connor@ostrander.biz</a>
-                </li>
+                 
               </ul>
             </h4>
             <h4>
               <ul>
                 <li class="name">Scott Solverson</li>
                 <li>Business Development</li>
-                <li>
-                  <a href="mailto:scott@ostrander.biz">scott@ostrander.biz</a>
-                </li>
+                 
               </ul>
             </h4>
             <h4>
               <ul>
                 <li class="name">Sonya Levoy</li>
                 <li>Controller</li>
-                <li>
-                  <a href="mailto:sonya@ostrander.biz">sonya@ostrander.biz</a>
-                </li>
+                
               </ul>
             </h4>
             <h4>
               <ul>
                 <li class="name">Marie Ostrander</li>
                 <li>Administrative Services</li>
-                <li>
-                  <a href="mailto:marie@ostrander.biz">marie@ostrander.biz</a>
-                </li>
+                
               </ul>
             </h4>
           </div>
@@ -185,7 +150,7 @@ $themeurl = get_bloginfo('template_url');
               <img class="img-fluid" src="assets/img/about/grid-graybox.jpg"  alt="">
               <h5 class="project-title">Name </h5>
             </div>
-          </div  hiding these bc we don't have any sign of headshots -->
+          </div        hiding these bc we don't have any  headshots -->
       </div>
     </div>
   </div>
@@ -197,9 +162,7 @@ $themeurl = get_bloginfo('template_url');
       <div class="col-lg-8 offset-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 content">
         <h2 class="green-title">KNOWLEDGE OF THE REGION</h2>
         <h4 class="text-description mb-3">
-          Our market is primarily in the Chicagoland area, however, our strong
-          relationships and project opportunities have led us to expand across
-          the region.
+          We work primarily in the Chicago Metropolitan Area; however, client relationships have presented many project opportunities outside the CMA.
         </h4>
         <h4>
           <img
