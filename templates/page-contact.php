@@ -67,6 +67,9 @@ $themeurl = get_bloginfo('template_url');
         </h4>
       </div>
     </div>
+     <div class="row">
+     [wpforms id="32"]
+     </div>
   </div>
 </section>
 
