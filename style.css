@@ -1,6 +1,6 @@
 /**
 * Template Name: Mentor - v4.9.0
-* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/g
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -679,7 +679,8 @@ section {
 
 .green-title {
   font-family: "Oxygen", sans-serif;
-  color: #00a850;
+/*  color: #00a850; */
+	color: blue;
   font-weight: 300;
   font-size: 1.75rem;
 }
