@@ -74,10 +74,8 @@ $themeurl = get_bloginfo('template_url');
 </section>
 
 <section class="banner" style="padding-bottom: 0">
-  <img
-    class="w-100"
-    src="<?php echo $themeurl; ?>/assets/img/projects/hero-kitchen-1800.jpg"
-    alt="where we work"  />
-</section>
+  <img class="w-100"
+    src="<?php echo $themeurl; ?>/assets/img/esplanade-clear-1.jpg"
+    alt="where we work"  /></section>
 
 <?php get_footer(); ?>
