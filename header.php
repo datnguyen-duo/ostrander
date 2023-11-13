@@ -1,6 +1,12 @@
 <?php
 $themeurl = get_bloginfo('template_url');
 
+$logo = get_field('logo', 'option');
+$phone = get_field('phone', 'option');
+$email = get_field('email', 'option');
+$linkedin = get_field('linkedin', 'option');
+
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -25,24 +31,34 @@ $themeurl = get_bloginfo('template_url');
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-end">
 
-      <h1 class="logo me-auto"><a href="/staging/"><img src="<?php echo $themeurl ?>/assets/img/home/oc-logo-rgb.png" alt="logo"></a></h1>
-      <nav id="navbar" class="navbar order-last order-lg-0">
-		<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'container' => false,
-					)
-				);
-			?>
-			<ul>
-			<li class="d-flex">
-				<a href="tel:6309712211" class="me-2 pt-0"><img src="<?php echo $themeurl ?>/assets/img/phone-round-34px.png" alt="phone" height="30" width="30"></a>
-				<a href="mailto:info@ostrander.biz" class="me-2 pt-0 ps-0"><img src="<?php echo $themeurl ?>/assets/img/email-round-34px.png" alt="email" height="30" width="30"></a>
-				<a href="https://www.linkedin.com/company/ostrander-construction-inc./" target="_blank"  class="pt-0 ps-0"><img src="<?php echo $themeurl ?>/assets/img/linkedin-round-34px.png" alt="linkedin" height="30" width="30"></a>
-			</li>
-			</ul>
-			<i class="bi bi-list mobile-nav-toggle"></i>
+		<?php if ($logo): ?>
+			<h1 class="logo me-auto"><a href="/">
+				<img src="<?php echo $logo['url']; ?>" alt="logo">
+			</a></h1>
+		<?php endif ?>
+		<nav id="navbar" class="navbar order-last order-lg-0">
+			<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'container' => false,
+						)
+					);
+				?>
+				<ul>
+				<li class="d-flex">
+					<?php if ($phone): ?>
+						<a href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone); ?>" class="me-2 pt-0"><img src="<?php echo $themeurl ?>/assets/img/phone-round-34px.png" alt="phone" height="30" width="30"></a>
+					<?php endif; ?>
+					<?php if ($email): ?>
+						<a href="mailto:<?php echo $email; ?>" class="me-2 pt-0 ps-0"><img src="<?php echo $themeurl ?>/assets/img/email-round-34px.png" alt="email" height="30" width="30"></a>
+					<?php endif; ?>
+					<?php if ($linkedin): ?>
+						<a href="<?php echo $linkedin; ?>" target="_blank"  class="pt-0 ps-0"><img src="<?php echo $themeurl ?>/assets/img/linkedin-round-34px.png" alt="linkedin" height="30" width="30"></a>
+					<?php endif; ?>
+				</li>
+				</ul>
+				<i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>

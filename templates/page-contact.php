@@ -5,6 +5,11 @@ get_header();
 
 $themeurl = get_bloginfo('template_url');
 
+$headline = get_field("headline");
+$form_shortcode = get_field("form_shortcode");
+$info = get_field("info");
+$image = get_field("image");
+
 ?>
 
 <section class="banner">
@@ -25,57 +30,32 @@ $themeurl = get_bloginfo('template_url');
   <div class="container">
     <div class="row">
       <div class="col-lg-8 offset-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 content">
-        <h2 class="green-title">CONTACT US</h2>
+        <?php if ($headline): ?>
+          <h2 class="green-title"><?php echo $headline; ?></h2>
+        <?php endif; ?>
         <h2 class="green-title">&nbsp;</h2>
         <h4 class="text-description mb-3">
-          <form action="process_form.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required /><br /><br />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required /><br /><br />
-
-            <label for="message">Message:</label><br />
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              style="float: left; width: 60%"
-              required
-            ></textarea
-            ><br /><br /><br /><br /><br /><br /><br />
-
-            <input
-              type="submit"
-              class="text-links"
-              style="float: left; font-size: 25px"
-              value="Submit"
-            />
-          </form>
+          <?php echo $form_shortcode ? $form_shortcode : null; ?>
         </h4>
         <h4 class="text-description mb-3">
           <br />
           <br />
         </h4>
 
-        <h4 class="text-description mb-3">
-          Phone: 630.971.2211<br />
-          Email: info@ostrander.biz<br />
-          <br />
-          2001 Butterfield Road, Suite 1120<br />
-          Downers Grove, IL 60515<br />
-        </h4>
+        <?php if ($info): ?>
+          <h4 class="text-description mb-3">
+            <?php echo $info; ?>
+          </h4>
+        <?php endif; ?>
       </div>
     </div>
   </div>
 </section>
 
-<section class="banner" style="padding-bottom: 0">
-  <img
-    class="w-100"
-    src="<?php echo $themeurl; ?>/assets/img/projects/hero-kitchen-1800.jpg"
-    alt="kitchen"
-  />
-</section>
+<?php if ($image): ?>
+  <section class="banner" style="padding-bottom: 0">
+    <?php echo wp_get_attachment_image( $image['id'], 'full', "", array('class' => 'd-block w-100 h-auto') ); ?>
+  </section>
+<?php endif; ?>
 
 <?php get_footer(); ?>

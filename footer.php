@@ -1,21 +1,28 @@
 <?php
 $themeurl = get_bloginfo('template_url');
+
+$themeurl = get_bloginfo('template_url');
+
+$logo = get_field('logo_min', 'option');
+$phone = get_field('phone', 'option');
+$email = get_field('email', 'option');
+$address = get_field('address', 'option');
+
 ?>
 
 </main><!-- End #main -->
-
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container d-lg-flex justify-content-between">
-      <img src="<?php echo $themeurl; ?>/assets/img/home/oc-smally.png" height="60" width="60" alt="logo">
+      <img src="<?php echo $logo['url']; ?>" height="60" width="60" alt="logo">
       <h4 class="text-uppercase inc p-3">OSTRANDER CONSTRUCTION INC</h4>
-      <p class="small p-3">
-        2001 Butterfield Road, Suite 1120<br>
-        Downers Grove, IL 60515
-      </p>
+      <?php if ($address): ?>
+      <p class="small p-3"><?php echo $address; ?></p>
+      <?php endif; ?>
+      
       <p class="small p-3 pe-0">
-        630-971-2211<br>
-        <a href="mailto:info@ostrander.biz">info@ostrander.biz</a>
+      <?php echo $phone ? $phone : null; ?><br>
+        <a href="mailto:<?php echo $email ? $email : null; ?>"><?php echo $email ? $email : null; ?></a>
       </p>
     </div>
   </footer><!-- End Footer -->

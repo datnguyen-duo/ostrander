@@ -867,7 +867,7 @@ body.page-template-page-services .service-grid {
   display: grid;
   width: 100%;
   height: 510px;
-  background-image: url("assets/img/services/adst_318198163_construction.jpg");
+  background-image: var(--data-attr-bg);
   margin: 3em auto 2em;
   padding: 0;
   grid-template-columns: 1fr 1fr 1fr;
