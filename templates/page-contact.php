@@ -49,13 +49,23 @@ $image = get_field("image");
         <?php endif; ?>
       </div>
     </div>
+     <div class="row">
+     [wpforms id="32"]
+     </div>
   </div>
 </section>
 
+<<<<<<< HEAD
 <?php if ($image): ?>
   <section class="banner" style="padding-bottom: 0">
     <?php echo wp_get_attachment_image( $image['id'], 'full', "", array('class' => 'd-block w-100 h-auto') ); ?>
   </section>
 <?php endif; ?>
+=======
+<section class="banner" style="padding-bottom: 0">
+  <img class="w-100"
+    src="<?php echo $themeurl; ?>/assets/img/esplanade-clear-1.jpg"
+    alt="where we work"  /></section>
+>>>>>>> 8c623fdd7c08090fc0b8e7bb97da25369097d7d0
 
 <?php get_footer(); ?>

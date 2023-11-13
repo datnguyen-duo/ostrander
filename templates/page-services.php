@@ -48,10 +48,21 @@ $cta_button = get_field("cta_button");
             <h2 class="green-title"><?php echo $tg_headline; ?></h2>
           <?php endif; ?>
 
+<<<<<<< HEAD
           <?php if ($tg_paragraph): ?>
             <h4 class="text-description mb-3"><?php echo $tg_paragraph; ?></h4>
           <?php endif; ?>
         </div>
+=======
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 content">
+        <h2 class="green-title">CONSISTENT MANAGEMENT APPROACH</h2>
+        <h4 class="text-description mb-3">
+          From concept development through project completion, Ostrander Construction is a transparent collaborator interested in fully understanding your goals and, ultimately, delivering your vision. With over 30 years of construction experience, we bring value to every project team, offering both our depth of expertise and our strong network of partners.
+        </h4>
+>>>>>>> 8c623fdd7c08090fc0b8e7bb97da25369097d7d0
       </div>
     </div>
 
@@ -109,6 +120,7 @@ $cta_button = get_field("cta_button");
   </div>
 </section>
 
+<<<<<<< HEAD
 <?php if ($tl_headline || $tl_paragraph || $tl_list || $tl_paragraph_bottom): ?>
   <section class="about" style="padding-top: 0; padding-bottom: 0">
     <div class="container">
@@ -137,6 +149,57 @@ $cta_button = get_field("cta_button");
           <h4 class="text-description mb-3"><?php echo $tl_paragraph_bottom; ?></h4>
           <?php endif; ?>
         </div>
+=======
+<section class="about" style="padding-top: 0; padding-bottom: 0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 content">
+        <h2 class="green-title">PROCESS AND COMMUNICATION</h2>
+        <h4 class="text-description mb-3">
+          We believe that listening first is fundamental to understanding your
+          priorities. Our highly-coordinated process targets consistent
+          communication and is designed to proactively address potential
+          challenges, adapt to evolving project dynamics, ensure productivity
+          and, ultimately, deliver success.
+        </h4>
+        <h4 class="text-description mb-3">
+          <ul>
+            <li class="spaced">
+              <span class="strong">1 Job start up notice</span> <br />Email that kicks off project include details on permit, schedule, list of contractors/subs, start date, and anticipated completion
+            </li>
+            <li class="spaced">
+              <span class="strong"
+                >2 Weekly updates on project status / consistent project
+                meetings</span
+              >
+              <br />Client is updated using a simple visual (bar chart) on
+              project
+            </li>
+            <li class="spaced">
+              <span class="strong">3 Change Orders</span> <br />Proactive
+              approach with all Change Order Requests delivered to client in
+              “real time” - no surprises at project close
+            </li>
+            <li class="spaced">
+              <span class="strong"
+                >4 Ongoing coordination with building management /
+                engineering</span
+              >
+              <br />Communicate safety systems testing, large deliveries, etc.
+            </li>
+            <li class="spaced">
+              <span class="strong">5 Final inspection Notice</span>
+              <br />Communicates space is occupancy ready to entire project team
+            </li>
+            <li class="spaced">
+              <span class="strong">6 Punchlist Completion Letter</span> <br />At Significant Completion, space is walked with tenant, property manager, and architect to develop a final punch list which is managed to completion
+            </li>
+          </ul>
+        </h4>
+        <h4 class="text-description mb-3">
+            
+        </h4>
+>>>>>>> 8c623fdd7c08090fc0b8e7bb97da25369097d7d0
       </div>
     </div>
 
