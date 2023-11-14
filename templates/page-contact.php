@@ -35,7 +35,7 @@ $image = get_field("image");
         <?php endif; ?>
         <h2 class="green-title">&nbsp;</h2>
         <h4 class="text-description mb-3">
-          <?php echo $form_shortcode ? $form_shortcode : null; ?>
+          <?php echo $form_shortcode ? do_shortcode($form_shortcode) : null; ?>
         </h4>
         <h4 class="text-description mb-3">
           <br />
@@ -50,7 +50,6 @@ $image = get_field("image");
       </div>
     </div>
      <div class="row">
-     [wpforms id="32"]
      </div>
   </div>
 </section>
