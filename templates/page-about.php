@@ -83,9 +83,8 @@ $ta_image = get_field("ta_image");
         <?php endif; ?>
 
         <?php if ($tl_list): ?>
-          <div class="row my-5 pt-3">
-            <div class="col-lg-6">
-              <?php foreach ($tl_list as $key => $item): if ($key < 5): ?>
+          <div class="grid my-5 pt-3">
+            <?php foreach ($tl_list as $key => $item): ?>
                 <h4>
                   <ul>
                     <li class="name"><?php echo $item['name']?></li>
@@ -95,21 +94,7 @@ $ta_image = get_field("ta_image");
                     </li>
                   </ul>
                 </h4>
-              <?php endif; endforeach; ?>
-            </div>
-            <div class="col-lg-6">
-              <?php foreach ($tl_list as $key => $item): if ($key > 4): ?>
-                <h4>
-                  <ul>
-                    <li class="name"><?php echo $item['name']?></li>
-                    <li><?php echo $item['title']?></li>
-                    <li>
-                      <a href="mailto:<?php echo $item['email']?>"><?php echo $item['email']?></a>
-                    </li>
-                  </ul>
-                </h4>
-              <?php endif; endforeach; ?>
-            </div>
+              <?php endforeach; ?>
           </div>
         <?php endif; ?>
       </div>

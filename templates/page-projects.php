@@ -100,21 +100,12 @@ $hl_list = get_field("hl_list");
           <?php endif; ?>
           <h4 class="text-description mb-3">
             <?php if ($hl_list): ?>
-              <div class="row my-5 pt-3">
-                <div class="col-lg-6">
-                  <ul>
-                    <?php foreach ($hl_list as $key => $item): if ($key < 10): ?>
-                      <li><?php echo $item['text']; ?></li>
-                    <?php endif; endforeach; ?>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul>
-                    <?php foreach ($hl_list as $key => $item): if ($key > 9): ?>
-                      <li><?php echo $item['text']; ?></li>
-                    <?php endif; endforeach; ?>
-                  </ul>
-                </div>
+              <div class="my-5 pt-3">
+                <ul class="grid">
+                  <?php foreach ($hl_list as $key => $item): ?>
+                    <li><?php echo $item['text']; ?></li>
+                  <?php endforeach; ?>
+                </ul>
               </div>
             <?php endif; ?>
             <br />

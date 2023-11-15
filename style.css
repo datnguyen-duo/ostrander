@@ -75,6 +75,10 @@ li.spaced {
 	opacity: 0.85;
   }  */
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 /*--------------------------------------------------------------
   # Back to top button
   --------------------------------------------------------------*/
@@ -679,8 +683,8 @@ section {
 
 .green-title {
   font-family: "Oxygen", sans-serif;
-/*  color: #00a850; */
-	color: blue;
+  /*  color: #00a850; */
+  color: blue;
   font-weight: 300;
   font-size: 1.75rem;
 }
