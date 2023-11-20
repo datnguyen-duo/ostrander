@@ -45,8 +45,7 @@ $linkedin = get_field('linkedin', 'option');
 						)
 					);
 				?>
-				<ul>
-				<li class="d-flex">
+				<li class="d-flex icons">
 					<?php if ($phone): ?>
 						<a href="tel:<?php echo preg_replace('/[^0-9]/', '', $phone); ?>" class="me-2 pt-0"><img src="<?php echo $themeurl ?>/assets/img/phone-round-34px.png" alt="phone" height="30" width="30"></a>
 					<?php endif; ?>
@@ -57,7 +56,6 @@ $linkedin = get_field('linkedin', 'option');
 						<a href="<?php echo $linkedin; ?>" target="_blank"  class="pt-0 ps-0"><img src="<?php echo $themeurl ?>/assets/img/linkedin-round-34px.png" alt="linkedin" height="30" width="30"></a>
 					<?php endif; ?>
 				</li>
-				</ul>
 				<i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 

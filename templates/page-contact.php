@@ -28,6 +28,7 @@ $image = get_field("image");
 
 <section class="about" style="margin-top: -10px">
   <div class="container">
+    <?php if ($image): echo wp_get_attachment_image( $image['id'], 'full', "", array('class' => 'h-auto contact-upper-img') ); endif; ?>
     <div class="row">
       <div class="col-lg-8 offset-lg-2 pt-4 pt-lg-0 order-2 order-lg-1 content">
         <?php if ($headline): ?>
@@ -36,10 +37,6 @@ $image = get_field("image");
         <h2 class="green-title">&nbsp;</h2>
         <h4 class="text-description mb-3">
           <?php echo $form_shortcode ? do_shortcode($form_shortcode) : null; ?>
-        </h4>
-        <h4 class="text-description mb-3">
-          <br />
-          <br />
         </h4>
 
         <?php if ($info): ?>
@@ -54,10 +51,7 @@ $image = get_field("image");
   </div>
 </section>
 
-<?php if ($image): ?>
-  <section class="banner" style="padding-bottom: 0">
-    <?php echo wp_get_attachment_image( $image['id'], 'full', "", array('class' => 'd-block w-100 h-auto') ); ?>
-  </section>
-<?php endif; ?>
-
+<section class="banner not-top">
+  <?php if ($image): echo wp_get_attachment_image( $image['id'], 'full', "", array('class' => 'h-auto w-100 contact-low-img') ); endif; ?>
+</section>
 <?php get_footer(); ?>

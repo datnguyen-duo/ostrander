@@ -100,6 +100,14 @@ document.addEventListener("DOMContentLoaded", function () {
       wrapAround: true,
     });
   });
+
+  /**
+   * APPEND NAV ICONS
+   */
+
+  let icons = document.querySelector("#navbar li.d-flex");
+  let menu = document.querySelector("#menu-main");
+  menu.append(icons);
 });
 
 //JQUERY
