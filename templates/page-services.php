@@ -15,6 +15,7 @@ $tg_grid = get_field("tg_grid");
 
 $hi_headline = get_field("hi_headline");
 $hi_images = get_field("hi_images");
+$hi_icons = get_field("hi_icons");
 
 $tl_headline = get_field("tl_headline");
 $tl_paragraph = get_field("tl_paragraph");
@@ -59,7 +60,7 @@ $cta_button = get_field("cta_button");
       <div class="service-grid" 
       style="--data-attr-bg: url(<?php echo "'" . $tg_image["url"] . "'";?>)">
         <?php foreach($tg_grid as $item): ?>
-          <div class="gridbox"><div class="s-type"><?php echo $item['text']; ?></div></div>
+          <div class="gridbox svcs"><div class="s-type"><?php echo $item['text']; ?></div></div>
         <?php endforeach; ?>
       </div>
     <?php endif; ?>
@@ -75,25 +76,24 @@ $cta_button = get_field("cta_button");
             <h2 class="green-title"><?php echo $hi_headline; ?></h2>
           <?php endif; ?>
 
-          <h4 class="text-description mb-3">
-            <?php echo wp_get_attachment_image( $hi_images[0]['image']['id'], 'full', "", 
-              array('style' => 
-                'margin: 0 auto 0 -5%;
-                padding: 0;
-                width: 110%;
-                height: auto;
-                overflow: visible;') ); 
-            ?>
-          </h4>
+          <?php if ($hi_icons): ?>
+          <div class="markets-grid">
+            <?php foreach($hi_icons as $key => $icon): ?>
+              <div class="gridbox mkts">
+                <?php echo wp_get_attachment_image( $icon['image']['id'], 'full', "", array('' => '') ); ?>
+              </div>
+            <?php endforeach; ?>
+          </div>
+          <?php endif; ?>
           <div class="row my-5 pt-3">
-            <?php foreach($hi_images as $key => $image): if ($key > 0): ?>
+            <?php foreach($hi_images as $key => $image): ?>
             <div class="col-lg-6">
               <?php echo wp_get_attachment_image( $image['image']['id'], 'full', "", array('class' => 'img-fluid') ); ?>
               <?php if($image['caption']): ?>
                 <h5><a href="#" class="project-title"><?php echo $image['caption']; ?></a></h5>
               <?php endif; ?>
             </div>
-            <?php endif; endforeach; ?>
+            <?php endforeach; ?>
           </div>
         </div>
       </div>
