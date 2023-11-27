@@ -798,7 +798,7 @@ section {
   line-height: 1.4;
 }
 
-.text-links {
+.text-links, .wpforms-submit {
   text-transform: none;
   background-color: #e3e2dc;
   color: #111;
